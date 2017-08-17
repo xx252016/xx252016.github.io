@@ -91,7 +91,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xx252016.oschina.io/blog/2017/08/18/test/" data-id="cj6fulphc00004wmdeaej9phq" class="article-share-link">Partager</a>
+      <a data-url="http://xx252016.oschina.io/blog/2017/08/18/test/" data-id="cj6fvqsin0001ismdbxzh93f8" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -126,18 +126,20 @@
         <p>Unix的哲学是“没有消息就是好消息“</p>
 <p>创建密钥<br>ssh-keygen -t rsa -C “youremail@example.com”</p>
 <p>ssh -T git@git.oschina.net<br>ssh -T git@github.com</p>
+<p>–查看远程仓库的信息<br>$ git remote    |    git remote -v<br>git remote -v # 查看远程服务器地址和仓库名称<br>–远程仓库管理-origin远程仓库的名字<br>git remote add osc git@git.oschina.net:xx252016/blog.git<br>git remote add gh  git@github.com:xx252016/xx252016.github.io.git<br>git remote rm <repository> # 删除远程仓库<br>git remote set-url gh git@github.com:xx252016/xx252016.github.io.git # 设置远程仓库地址(用于修改远程仓库地址)<br>git remote show gh # 查看远程服务器仓库状态</repository></p>
 <p>———————————————————————————————————git-<a href="http://git-scm.com" target="_blank" rel="external">http://git-scm.com</a><br>–只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等》（word 二进制格式）<br>sudo apt-get install git<br>–源码<br>./config，make，sudo make install<br>–windows Cygwin+git–》msysgit<br>$ git config –global user.name “xx252016”<br>$ git config –global user.email “xx252016@163.com”<br>$ git config –global color.ui true<br>$ git config –global alias.st status<br>$ git config –global alias.co checkout<br>$ git config –global alias.ci commit<br>$ git config –global alias.br branch<br>$ git config –global alias.unstage ‘reset HEAD’<br>$ git config –global alias.last ‘log -1’<br>git config –global alias.lg “log –color –graph –pretty=format:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset’ –abbrev-commit”</p>
 <p>$ mkdir learngit<br>$ cd learngit<br>$ pwd<br>–把这个目录变成Git可以管理的仓库：<br>git init<br>–查看所有，包含隐藏<br>ls -ah</p>
 <p>git add <file><br>git commit     [-m ]</file></p>
 <p>git status<br>git diff<br>git log<br>$ git reset –hard HEAD^<br>$ git reset –hard commit_id<br>git reflog<br>git checkout – file<br>–远程仓库</p>
-<p>$ git remote add origin git@github.com:xx252016/learngit.git<br>$ git push [-u] origin master<br>$ git clone git@github.com:xx252016/gitskills.git</p>
-<p>–创建分支<br>$ git checkout -b dev==&gt;&lt;$ git branch dev+$ git checkout dev&gt;<br>–查看分支<br>$ git branch<br>–切换回master分支后<br>$ git checkout master<br>$ git merge dev<br>—-no-ff参数，表示禁用Fast forward<br>$ git merge –no-ff -m “merge with no-ff” dev<br>–删除分支<br>$ git branch -d dev<br>–bug分支<br>$ git stash<br>$ git status<br>$ git stash list<br>$ git stash pop(==&gt;git stash apply+git stash drop)<br>$ git stash list<br>–查看远程仓库的信息<br>$ git remote    |    git remote -v<br>$ git push origin master<br>$ git push origin dev<br>–创建标签<br>$ git tag v1.0<br>$ git tag v0.9 6224937<br>$ git show v0.9<br>git tag -a <tagname> -m “blablabla…”可以指定标签信息；<br>git tag -s <tagname> -m “blablabla…”可以用PGP签名标签；<br>–可以查看所有标签。<br>git tag<br>    命令git push origin <tagname>可以推送一个本地标签；<br>    命令git push origin –tags可以推送全部未推送过的本地标签；<br>    命令git tag -d <tagname>可以删除一个本地标签；<br>    命令git push origin :refs/tags/<tagname>可以删除一个远程标签。</tagname></tagname></tagname></tagname></tagname></p>
-<p>git remote add github git@github.com:michaelliao/learngit.git<br>git remote add gitee git@gitee.com:liaoxuefeng/learngit.git<br><a href="https://github.com/michaelliao/gitskills.git" target="_blank" rel="external">https://github.com/michaelliao/gitskills.git</a><br>git@github.com:xx252016/gitskills.git</p>
+<p>$ git push [-u] origin master<br>$ git clone git@github.com:xx252016/gitskills.git</p>
+<p>–创建分支<br>$ git checkout -b dev==&gt;&lt;$ git branch dev+$ git checkout dev&gt;<br>–查看分支<br>$ git branch<br>–切换回master分支后<br>$ git checkout master<br>$ git merge dev<br>—-no-ff参数，表示禁用Fast forward<br>$ git merge –no-ff -m “merge with no-ff” dev<br>–删除分支<br>$ git branch -d dev<br>–bug分支<br>$ git stash<br>$ git status<br>$ git stash list<br>$ git stash pop(==&gt;git stash apply+git stash drop)<br>$ git stash list</p>
+<p>$ git push origin master<br>$ git push origin dev<br>–创建标签<br>$ git tag v1.0<br>$ git tag v0.9 6224937<br>$ git show v0.9<br>git tag -a <tagname> -m “blablabla…”可以指定标签信息；<br>git tag -s <tagname> -m “blablabla…”可以用PGP签名标签；<br>–可以查看所有标签。<br>git tag<br>    命令git push origin <tagname>可以推送一个本地标签；<br>    命令git push origin –tags可以推送全部未推送过的本地标签；<br>    命令git tag -d <tagname>可以删除一个本地标签；<br>    命令git push origin :refs/tags/<tagname>可以删除一个远程标签。</tagname></tagname></tagname></tagname></tagname></p>
+<p><a href="https://github.com/michaelliao/gitskills.git" target="_blank" rel="external">https://github.com/michaelliao/gitskills.git</a><br>git@github.com:xx252016/gitskills.git</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xx252016.oschina.io/blog/2017/08/17/git+hexo(show)/" data-id="cj6fumkqa0000p4mdc9djlcr0" class="article-share-link">Partager</a>
+      <a data-url="http://xx252016.oschina.io/blog/2017/08/17/git+hexo(show)/" data-id="cj6fvqsip0002ismdlgfpbkc4" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -175,7 +177,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xx252016.oschina.io/blog/2017/08/17/新建文章无需重启/" data-id="cj6fulpi000024wmdiq1jlaky" class="article-share-link">Partager</a>
+      <a data-url="http://xx252016.oschina.io/blog/2017/08/17/新建文章无需重启/" data-id="cj6fvqsij0000ismdmbrbcgmg" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -220,7 +222,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xx252016.oschina.io/blog/2017/08/17/hello-world/" data-id="cj6fulplt00034wmdwqxx9361" class="article-share-link">Partager</a>
+      <a data-url="http://xx252016.oschina.io/blog/2017/08/17/hello-world/" data-id="cj6fvqsir0004ismdog5vxl4b" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -256,7 +258,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xx252016.oschina.io/blog/2017/08/16/test中文/" data-id="cj6fulphk00014wmdvxymztrq" class="article-share-link">Partager</a>
+      <a data-url="http://xx252016.oschina.io/blog/2017/08/16/test中文/" data-id="cj6fvqsiq0003ismdf83sfycd" class="article-share-link">Partager</a>
       
       
     </footer>
