@@ -84,14 +84,7 @@ deploy:
   
   #repo: ssh://git@github.com/xx252016/xx252016.github.io.git
   #repo: ssh://git@git.oschina.net/xx252016/blog.git
-  repo: ssh://git@git.oschina.net/xx252016/blog.git
+  
+  repo: ssh://git@github.com/xx252016/xx252016.github.io.git
 
   branch: master
-		
-		
-		
-		
-		
-		
-		
-		
