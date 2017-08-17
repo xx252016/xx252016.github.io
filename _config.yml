@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: sometimes native
 subtitle:
 description:
-author: John Doe
+author: xx252016
 language:
 timezone:
 
@@ -74,12 +74,18 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  #repo: https://git.oschina.net/xx252016/blog.git
+  #repo: https://github.com/xx252016/blog.github.io.git
+  #repo: https://git.oschina.net/xx252016/blog.git.
+  
+  #repo: ssh://git@github.com/xx252016/xx252016.github.io.git
+  #repo: ssh://git@git.oschina.net/xx252016/blog.git
   repo: ssh://git@git.oschina.net/xx252016/blog.git
+
   branch: master
 		
 		
